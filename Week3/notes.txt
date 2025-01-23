@@ -1,0 +1,3 @@
+npm init -y (package.json)
+npm i express nodemon (install nodemon)
+npm i dotenv (install dotenv)
