@@ -56,6 +56,6 @@ app.get("/itm/:itemID", (req, res) => {
 // %2B == + (in a URL)
 // %25 == % (in a URL)
 
-app.listen(PORT, () => {
+app.listen(PORT, () => { // .listen keeps app running in the background
     console.log(`http://localhost:${PORT}`)
 })
