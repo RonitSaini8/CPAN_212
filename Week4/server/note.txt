@@ -1,0 +1,7 @@
+npm init -y (package.json)
+npm i express nodemon (install nodemon)
+npm i dotenv (install dotenv)
+
+(in client) vvv
+
+npm create vite@latest .
