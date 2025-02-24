@@ -1,0 +1,6 @@
+npm init -y
+npm i express nodemon
+
+(in client)
+
+npm create vite@latest .
