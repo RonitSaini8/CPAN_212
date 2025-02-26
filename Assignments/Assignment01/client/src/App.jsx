@@ -45,7 +45,7 @@ export default function App() {
               <ListGroup>
                 {education.map((item, index) => (
                   <ListGroup.Item key = {index}>
-                    <strong>{item.degree}</strong> - {item.institution} ({item.year})
+                    <strong>{item.degree}</strong> - {item.institution} ({item.year}) - {item.status}
                   </ListGroup.Item>
                 ))}
               </ListGroup>
