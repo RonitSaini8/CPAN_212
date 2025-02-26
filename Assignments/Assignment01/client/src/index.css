@@ -1,0 +1,27 @@
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  margin: 10px 0;
+}
+
+.card.title {
+  font-size: 24px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.list-group-item {
+  padding: 10px;
+}
+
+h1, h2 {
+  font-size: 24px;
+}
