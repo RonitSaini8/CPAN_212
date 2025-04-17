@@ -1,0 +1,163 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: darkorchid;
+  color: black;
+  width: 100%;
+  margin-top: -210px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  align-items: end;
+}
+
+nav a:hover {
+  transform: scale(1.3);
+  transition: transform 0.2s;
+}
+
+span:hover {
+  transform: scale(1.3);
+  transition: transform 0.2s;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  width: 100%;
+}
+
+.Search {
+  padding: 5px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.searchButton {
+  margin-left: 30px;
+}
+
+.homeButton:hover {
+  color: orchid !important;
+}
+
+.submitButton {
+  margin-top: 15px;
+}
+
+.inputField {
+  margin-top: 10px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.gogotube:hover {
+  transform: perspective(300px) rotateY(360deg);
+  transition: transform 1s;
+  cursor: default;
+}
+
+body {
+  padding-top: 200px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.logout {
+  cursor: pointer;
+  color: white;
+  transition: color 0.2s ease-in=out;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.logout:hover {
+  color: black;
+}
+
+.videoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.videoCard {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: darkorchid;
+  box-shadow: 0 6px 10px rgba(0, 0, 3, 3);
+}
+
+.videoCard h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: black;
+}
+
+.videoCard h4 {
+  margin: 5px 0;
+  font-size: 14px;
+  color: black;
+}
+
+.videoCard:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 3, 3);
+  background-color: yellow;
+  color: orange;
+}
+
+video {
+  margin-top: 20px;
+}
