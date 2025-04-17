@@ -11,6 +11,11 @@ export default function Upload() {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
+  if (!localStorage.getItem("token")) {
+    alert("You need to login first !");
+    return navigate("/register");
+  }
+
   const handleUpload = async (e) => {
     e.preventDefault();
     let [hours = 0, minutes = 0, seconds = 0] = duration.split(":").map(Number);
@@ -38,11 +43,6 @@ export default function Upload() {
       userId: user.id,
       username: user.username,
     };
-
-    if (!localStorage.getItem("token")) {
-      alert("You need to login first !");
-      return;
-    }
 
     try {
       const response = await fetch("http://localhost:8000/api/videos/upload", {
